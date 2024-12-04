@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "IronMaiden";
+    src: url(fonts/Purgatory\ \(Iron\ Maiden\ Font\ 2\).ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "TheBeast";
+    src: url(fonts/The\ Font\ Of\ The\ Beast\ \(The\ Number\ Of\ The\ Beast\).ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "Somewhere";
+    src: url(fonts/LcdD\ \(Somewhere\ In\ Time\ Font\).ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/RobotoSlab-VariableFont_wght.ttf) format(truetype);
+}

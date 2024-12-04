@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-image: url(images/fondo.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    padding: 5px;
+}
+
+header{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    z-index: -1;
+}
+
+nav{
+    display: flex;
+    box-sizing: border-box;
+    margin-top: 20px;
+    font-family: Somewhere;
+    color: white;
+}
+
+.title{
+    margin: 10px 0 0 20px;
+}
+
+h1{
+    color: rgb(193, 32, 32);
+    font-size: 110px;
+    font-family: IronMaiden;
+}
+
+span{
+    color: white;
+    font-size: 30px;
+    font-family: Somewhere;
+}
+
+nav > ul{
+    display: flex;
+}
+
+nav  ul  li  ul{
+    visibility: hidden;
+}
+
+nav  ul  li:hover > ul{
+    visibility: visible;
+}
+
+nav > ul > li > a{
+    display: flex;
+    padding: 20px;
+    color: white;
+    font-size: 40px;
+    transition: all 300ms ease;
+    margin-left: 5px;
+}
+
+nav > ul > li > a:hover{
+    background: maroon;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+}
+
+nav  ul  li  ul  li{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav  ul  li  ul  li:hover{
+    background: maroon;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+}
+
+nav  ul  li  ul  li  a{
+    color: white;
+}
+
+/*Estilos para los botones de redes*/
+
+.youtube{
+    position: absolute;
+    right: -220px;
+    top: -220px;
+    scale: 0.1;
+}
+
+.instagram{
+    position: absolute;
+    right: -150px;
+    top: -220px;
+    scale: 0.1;
+}
+
+
+
+
+
+
+
+
+
+

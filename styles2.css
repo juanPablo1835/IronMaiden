@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-image: url(images/fondo-banda.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    width: 4px;
+}
+body::-webkit-scrollbar-thumb{
+    background: maroon;
+    border-radius: 10px;
+}
+
+header{
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85);
+}
+
+nav{
+    display: flex;
+    font-family: Somewhere;
+    height: 75px;
+    width: 100vw;
+    padding: 5px;
+    background: transparent;
+}
+
+.title{
+    position: fixed;
+    color: maroon;
+    font-size: 23px;
+    font-family: IronMaiden;
+    left: 40px;
+    top: 15px;
+    z-index: 1;
+}
+
+h3{
+    color: maroon;
+    font-size: 20px;
+    font-family: Somewhere;
+}
+
+nav > ul{
+    display: flex;
+    margin-left: 38rem;
+}
+
+nav > ul > li > a{
+    display: flex;
+    padding: 20px;
+    color: maroon;
+    font-size: 35px;
+    transition: all 300ms ease;
+    font-weight: bold;
+}
+nav > ul > li > a:hover{
+    background: maroon;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+nav  ul  li  ul{
+    box-sizing: border-box;
+    visibility: hidden;
+    width: auto;
+    align-items: flex-start;
+}
+
+nav  ul  li:hover > ul{
+    visibility: visible;
+    position: relative;
+    z-index: 100;
+}
+
+nav  ul  li  ul  li{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+nav  ul  li  ul  li:hover{
+    background: maroon;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+}
+
+nav  ul  li  ul  li  a{
+    color: white;
+}
+
+/*Estilos para los botones de redes*/
+
+.youtube{
+    position: fixed;
+    right: -210px;
+    top: -210px;
+    scale: 0.1;
+}
+
+.instagram{
+    position: fixed;
+    right: -150px;
+    top: -210px;
+    scale: 0.1;
+}
+
+.ironword{
+    position: fixed;
+    scale: 1.8;
+    font-family: Somewhere;
+    color: maroon;
+    font-weight: bold;
+    right: 50px;
+    top: 85px;
+}
+
+/*Estilos para la pagina: banda*/
+span{
+    color: maroon;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.text{
+    color: rgb(72, 72, 72);
+    font-family: Somewhere;
+    font-size: 1.8rem;
+    width: 100%;
+    padding: 1.7rem 11rem 0 15rem;
+    text-align: center;
+    white-space: pre-wrap;
+    background: linear-gradient(to top, #fff, transparent);
+}
+
+/*Estilos para la pagina: integrantes*/
+textarea::-webkit-scrollbar{
+    width: 3px;
+}
+textarea::-webkit-scrollbar-thumb{
+    background: transparent;
+}
+
+.carousel0{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.carousel0 ul{
+    margin: 0 10rem;
+}
+
+textarea{
+    font-family: Somewhere;
+    color: transparent;
+    font-size: 1.3rem;
+    text-align: start;
+    white-space: pre-wrap;
+    margin: 0 1rem 0 2rem;
+    padding: 13rem 0;
+    /*resize: none;*/
+    font-weight: bold;
+    border: transparent;
+    transition-property: color;
+    transition-timing-function: ease-in;
+}
+textarea:hover{
+    background: transparent;
+    color: rgb(75, 75, 75);
+    box-shadow: none;
+    transition-duration: 1s;
+    padding: 0;
+}
+
+.Steve{
+    background: url(images/Steve.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.Dave{
+    background: url(images/Dave.jpg) no-repeat;
+    background-size: cover;
+    background-position: 10px 0 0 0;
+}
+
+.Adrian{
+    background: url(images/Adrian.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50px 0 0 0;
+}
+
+.Bruce{
+    background: url(images/Bruce.jpg) no-repeat;
+    background-size: cover;
+    background-position: 40px 0 0 0;
+}
+
+.Nicko{
+    background: url(images/Nicko.jpg) no-repeat;
+    background-size: cover;
+    background-position: 100px 0 0 0;
+}
+
+.Janick{
+    background: url(images/Janick.jpg) no-repeat;
+    background-size: cover;
+}
+
+.Blaze{
+    background: url(images/Blaze.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.Paul{
+    background: url(images/Paul.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50px 0 0 0;
+}
+
+.Clive{
+    background: url(images/Clive.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.Dennis{
+    background: url(images/Dennis.jpg) no-repeat;
+    background-size: cover;
+    background-position: 10px 0 0 0;
+}
+
+
+
+/*Estilos para la pagina estudio*/
+.carousel{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: -3rem;
+    z-index: -1;
+}
+
+.carousel ul{
+    margin: 0 4rem;
+    max-height: 100vh;
+    padding: 10rem 0 10rem 0;
+}
+
+.carousel ul li{
+    padding: 1.3rem;
+}
+
+.carousel ul li img{
+    -webkit-box-reflect: below 0 linear-gradient(transparent,transparent,rgba(0,0,0,0.4));
+    width: 20rem;
+    height: 16rem;
+    transition: all 800ms ease;
+}
+.carousel ul li img:hover{
+    scale: 1.2;
+}
+
+.carousel_izquierdo,
+.carousel_derecho{
+    position: absolute;
+    display: block;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: maroon;
+    top: calc(50% -30px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    transition: all 300ms;
+}
+
+.carousel_derecho{
+    position: absolute;
+    right: 0;
+}
+
+button:hover{
+    background-color: white;
+    width: 50px;
+    height: 50px;
+}
+
+
+/*Estilos para los popups*/
+
+.contenedor{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    transition: all 500ms;
+    opacity: 0;
+}
+
+.contenedor:target{
+    background: rgba(0, 0, 0, 0.7);
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup{
+    font-family: Somewhere;
+    background: white;
+    position: relative;
+    width: 80rem;
+    height: 30rem;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2rem;
+    align-items: start;
+}
+
+.popup textarea{
+    font-size: 1.2rem;
+    color: rgb(75, 75, 75);
+    width: 100%;
+    height: 100%;
+    border: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.boton_cerrado{
+    font-size: xx-large;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 6px;
+    color: white;
+    background: maroon;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    transition: all 500ms;
+    display: flex;
+    align-items: center;
+}
+
+.boton_cerrado:hover{
+    scale: 1.2;
+}
+
+
+
+
+
+
+
+
+
+
